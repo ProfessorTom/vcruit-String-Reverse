@@ -9,6 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/jest": "^26.0.0",
+    "eslint-plugin-jest": "^23.16.0",
     "jest": "^26.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.0"
   }
 }
