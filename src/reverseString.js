@@ -13,7 +13,7 @@ function reverseString(stringToReverse) {
     return reversedString;
   }
 
-  const splitString = stringToReverse.split();
+  const splitString = stringToReverse.split(' ');
 
   if(splitString.length == 1) {
     return stringToReverse;
