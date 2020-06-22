@@ -41,5 +41,9 @@ describe('reverse string tests', () => {
     test('empty string', () => {
       expect(rs.reverseString('')).toEqual('');
     })
+
+    test('single word', () => {
+      expect(rs.reverseString('foo')).toEqual('foo');
+    })
   });
 });

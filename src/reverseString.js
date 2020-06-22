@@ -12,6 +12,12 @@ function reverseString(stringToReverse) {
   if(stringToReverse.length == 0) {
     return reversedString;
   }
+
+  const splitString = stringToReverse.split();
+
+  if(splitString.length == 1) {
+    return stringToReverse;
+  }
 }
 
 module.exports = {
