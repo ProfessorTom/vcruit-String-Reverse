@@ -4,6 +4,8 @@
   "description": "Tomas Gallucci's solution to vcruit string reversal test",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "jest --clearCache && jest",
     "test-watch": "jest --clearCache && jest --watch"
   },
