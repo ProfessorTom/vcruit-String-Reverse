@@ -7,10 +7,10 @@ function reverseString(stringToReverse) {
     throw new Error(`stringToReverse must be of type 'string'. Got ${typeof stringToReverse}`);
   }
 
-  let reversedString = '';
+  let returnString = '';
   
   if(stringToReverse.length == 0) {
-    return reversedString;
+    return returnString;
   }
 
   const splitString = stringToReverse.split(' ');
@@ -18,6 +18,16 @@ function reverseString(stringToReverse) {
   if(splitString.length == 1) {
     return stringToReverse;
   }
+
+  for(let i = splitString.length - 1; i >= 0; i--) {
+    returnString += splitString[i];
+
+    if(i != 0) {
+      returnString += ' '
+    }
+  }
+
+  return returnString;
 }
 
 module.exports = {

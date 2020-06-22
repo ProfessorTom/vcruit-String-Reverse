@@ -45,5 +45,9 @@ describe('reverse string tests', () => {
     test('single word', () => {
       expect(rs.reverseString('foo')).toEqual('foo');
     })
+
+    test('multiple words', ()  => {
+      expect(rs.reverseString('Mary had a little lamb')).toEqual('lamb little a had Mary');
+    })
   });
 });
