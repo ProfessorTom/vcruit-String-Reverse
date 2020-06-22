@@ -36,4 +36,10 @@ describe('reverse string tests', () => {
     });
     
   });
+
+  describe('reverse', () => {
+    test('empty string', () => {
+      expect(rs.reverseString('')).toEqual('');
+    })
+  });
 });

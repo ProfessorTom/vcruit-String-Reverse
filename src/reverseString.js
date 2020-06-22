@@ -6,6 +6,12 @@ function reverseString(stringToReverse) {
   if(typeof stringToReverse !== 'string') {
     throw new Error(`stringToReverse must be of type 'string'. Got ${typeof stringToReverse}`);
   }
+
+  let reversedString = '';
+  
+  if(stringToReverse.length == 0) {
+    return reversedString;
+  }
 }
 
 module.exports = {
